@@ -38,7 +38,7 @@ header a:hover {
 
 .row {
   align-items: center;
-  min-height: 90vh;
+  margin: 100px auto;
 }
 
 .text {
@@ -389,6 +389,14 @@ footer p {
     font-size: 0.8rem;
   }
 
+  .row,
+  .about,
+  .skills,
+  .work,
+  .contact {
+    margin-top: 0;
+  }
+
   .about h1,
   .skills h1,
   .work h1,
@@ -433,5 +441,21 @@ footer p {
 
   .container {
     height: fit-content;
+  }
+
+  .row {
+    height: 540px;
+  }
+
+  .about {
+    height: 500px;
+  }
+
+  .row img {
+    height: 300px;
+  }
+
+  .text span {
+    font-size: 1.6rem;
   }
 }
