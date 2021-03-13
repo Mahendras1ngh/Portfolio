@@ -17,7 +17,7 @@
   justify-content: space-between;
 }
 
-.bar {
+.menu {
   width: 35px;
   height: 5px;
   background-color: var(--color);
