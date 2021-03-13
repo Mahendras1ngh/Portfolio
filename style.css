@@ -329,6 +329,27 @@ footer p {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .about-me-info p {
+    font-size: 1rem;
+  }
+  .skills-info {
+    font-size: 1.1rem;
+  }
+
+  .work-category button {
+    padding: 12px 22px;
+    font-size: 0.95rem;
+  }
+
+  .about h1,
+  .skills h1,
+  .work h1,
+  .contact h1 {
+    font-size: 8rem;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .text span {
     font-size: 2.5rem;
@@ -346,5 +367,71 @@ footer p {
   .right {
     margin: 50px auto;
     text-align: center;
+  }
+  .about-me-info p {
+    font-size: 0.9rem;
+  }
+  .skills-info {
+    font-size: 0.9rem;
+  }
+
+  div[class^="tag"] {
+    width: 100px;
+    height: 25px;
+  }
+
+  div[class^="tag"] label {
+    font-size: 0.8rem;
+  }
+
+  .work-category button {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+
+  .about h1,
+  .skills h1,
+  .work h1,
+  .contact h1 {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about h1,
+  .skills h1,
+  .work h1,
+  .contact h1 {
+    font-size: 4rem;
+  }
+
+  form input,
+  form textarea {
+    width: 300px;
+  }
+
+  .about-me-info p {
+    font-size: 0.7rem;
+  }
+  .skills-info {
+    font-size: 0.7rem;
+  }
+
+  div[class^="tag"] {
+    width: 80px;
+    height: 20px;
+  }
+
+  div[class^="tag"] label {
+    font-size: 0.6rem;
+  }
+
+  .work-category button {
+    padding: 8px 16px;
+    font-size: 0.6rem;
+  }
+
+  .container {
+    height: fit-content;
   }
 }
