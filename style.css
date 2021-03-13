@@ -113,7 +113,7 @@ header a:hover {
 
 .about {
   height: 100vh;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .about h1,
@@ -127,7 +127,7 @@ header a:hover {
 .about-me-info {
   max-width: 900px;
   background-color: transparent;
-  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.45);
   padding: 50px;
   position: relative;
   top: -70px;
@@ -136,13 +136,13 @@ header a:hover {
   z-index: 1;
 }
 
-a.about-me-info p {
+.about-me-info p {
   font-size: 1.3rem;
-  color: #444;
+  color: #555;
+  font-weight: 500;
 }
 
-a.about-me-info p:nth-child(2),
-a.about-me-info p:last-child {
+.about-me-info p:last-child {
   margin-top: 30px;
 }
 
@@ -172,7 +172,7 @@ a.about-me-info p:last-child {
 
 .skills-info {
   font-size: 1.4rem;
-  color: #444;
+  color: #222;
   max-width: 800px;
   position: relative;
   left: 50%;
@@ -182,19 +182,146 @@ a.about-me-info p:last-child {
   margin-bottom: 50px;
 }
 
-.progress-section {
-  width: 100%;
+.html {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
-.progressbar label {
-  font-size: 1.4rem;
+.progress {
+  margin-bottom: 20px;
+  width: 80vw;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
 }
 
-.progressbar progress {
-  width: 70%;
+div[class^="tag"] {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+  width: 120px;
+  height: 30px;
+  background-color: #1785a7;
+  margin-right: 5%;
 }
 
-/* ---------------------------------------------------- */
+div[class^="tag"] label {
+  text-align: left;
+  font-size: 1.1rem;
+  color: #fff;
+  padding-left: 10px;
+  padding-top: 3px;
+}
+
+.progressbar {
+  display: block;
+  position: relative;
+  width: 600px;
+  height: 20px;
+  border: 1px solid #48cfad;
+  border-radius: 20px;
+  margin-top: 7px;
+}
+
+div[class^="bar"] {
+  position: absolute;
+  background-color: #48cfad;
+  height: 10px;
+  border-radius: 20px;
+  margin: 2.7px;
+  width: 85%;
+  transition: all 1.5s;
+}
+
+/* div[class^="bar"]:hover {
+  width: 85%;
+} */
+/* -------------------------Work--------------------------- */
+
+.work-category button {
+  text-transform: capitalize;
+  border: 1px solid var(--color);
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: var(--color);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+div[class^="category"] {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(autofill, minmax(350px, 1fr));
+  grid-gap: 20px;
+}
+
+.work a {
+  justify-self: center;
+  position: relative;
+  display: inline-block;
+}
+
+.work-category:active {
+  background-color: var(--color);
+}
+
+button:active {
+  color: #333;
+}
+
+.work a img {
+  width: 350px;
+  justify-self: center;
+}
+
+/* ---------------------------contact------------------------------ */
+
+.contact {
+  margin-top: 50px;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 500px;
+  padding: 20;
+  background-color: transparent;
+  border: 3px solid #707070;
+  margin: 20px 0;
+  outline: bobe;
+  color: #333;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+}
+
+form input[type="submit"] {
+  background-color: lightpink;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px 0;
+}
+
+footer hr {
+  border: 2px solid #707070;
+  margin-top: 80px;
+}
+
+footer p {
+  text-align: center;
+  color: #707070;
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+
+/* ---------------------------------------------------------------- */
 
 @media screen and (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
