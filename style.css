@@ -110,6 +110,7 @@ header a:hover {
 .about {
   height: 100vh;
   margin-top: 50px;
+  height: max-content;
 }
 
 .about h1,
@@ -389,6 +390,10 @@ footer p {
     font-size: 0.8rem;
   }
 
+  .skills {
+    height: max-content;
+  }
+
   .row,
   .about,
   .skills,
@@ -446,10 +451,10 @@ footer p {
   .row {
     height: 540px;
   }
-
+  /* 
   .about {
-    height: 500px;
-  }
+    height: 370px;
+  } */
 
   .row img {
     height: 300px;
